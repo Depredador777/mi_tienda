@@ -1,0 +1,234 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f7;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #176b50;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+main {
+    width: 100%;
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+/* PANELES */
+
+.panel {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.panel h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+/* ETIQUETAS */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 7px;
+}
+
+/* CAMPOS DE TEXTO */
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #176b50;
+}
+
+/* BOTONES */
+
+button {
+    padding: 12px 16px;
+    background-color: #176b50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.88;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    margin-top: 18px;
+}
+
+/* BARRA DEL USUARIO */
+
+.user-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.logout-button {
+    background-color: #555;
+}
+
+/* BOTONES DEL FORMULARIO */
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.form-buttons button {
+    flex: 1;
+}
+
+.cancel-button {
+    background-color: #777;
+}
+
+/* LISTA DE PRODUCTOS */
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.product-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+.product-price {
+    color: #176b50;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* ACCIONES DE CADA PRODUCTO */
+
+.product-actions {
+    display: flex;
+    gap: 7px;
+}
+
+.edit-button {
+    background-color: #2563a6;
+    padding: 9px 11px;
+}
+
+.delete-button {
+    background-color: #c0392b;
+    padding: 9px 11px;
+}
+
+/* MENSAJES */
+
+.message {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+#productCount {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.empty-message {
+    color: #777;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* ADAPTACIÓN A TELÉFONOS */
+
+@media (max-width: 450px) {
+
+    main {
+        margin-top: 15px;
+    }
+
+    .panel {
+        padding: 15px;
+    }
+
+    .product-name {
+        font-size: 14px;
+    }
+
+    .product-price {
+        font-size: 18px;
+    }
+
+    .product-actions button {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+}
